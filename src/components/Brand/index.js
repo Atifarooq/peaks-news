@@ -1,11 +1,12 @@
 import React from 'react';
+import Heading from '../Typography/Heading';
 
 const Brand = () => {
 
     return (
         <>
-            <h4>The</h4>
-            <h1>Peaks</h1>
+            <Heading weight={3}>The</Heading>
+            <Heading weight={1}>Peaks</Heading>
         </>
     );
 }

@@ -1,0 +1,79 @@
+
+.nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+    
+  .nav__btn {
+    display: none;
+  }
+    
+  .nav__items > .nav__items__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    color: #efefef;
+  }
+  
+  .nav__items > .nav__items__link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav__check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+
+    .nav__btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .nav__btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+
+    .nav__btn > label:hover,.nav  .nav__check:checked ~ .nav__btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav__btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+
+    .nav__items {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+
+    .nav__items > .nav__items__link {
+      display: block;
+      width: 100%;
+    }
+    
+    .nav__check:not(:checked) ~ .nav__items {
+      height: 0px;
+    }
+
+    .nav__check:checked ~ .nav__items {
+      height: auto;
+      overflow-y: auto;
+    }
+  }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigations } from '../../constants/navigations';
 import Brand from '../Brand';
 import Container from '../Container';
 import Flex from '../Flex';
@@ -11,7 +12,7 @@ const TopBar = () => {
         <Flex justifyAround className={classes.topbar}>
             <Container>
                 <Brand />
-                <Navbar />
+                <Navbar navigations={navigations} />
             </Container>
         </Flex>
     );

@@ -4,7 +4,7 @@
     width: var(--container-width);
     padding-left: var(--container-pad-x);
     padding-right: var(--container-pad-x);
-    border: 1px solid red;
+    background-color:  rgba(0, 0, 0, 0.1);
 }
 
 /*
@@ -27,20 +27,20 @@ No media query since this is the default because it is "mobile first"
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     .container {
-        width: 660px;
+        width: 750px;
     }
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .container {
-        width: 960px;
+        width: 970px;
     }
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     .container {
-        width: 960px;
+        width: 1170px;
     }
 }

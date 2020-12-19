@@ -50,11 +50,12 @@ import classes from './flex.module.css';
  * @param { contentAround }
  * @param { contentStretch }
  */
-const Flex = ({ children, className, ...rest }) => {
+const Flex = ({ children, as = 'div', className, ...rest }) => {
 
-    const styles = Object.keys(rest).reduce((style, css) => `${style} ${classes[css]}`, `${classes.flex}`);
-    
-    return <div className={`${styles} ${className || ''}`.trim()}>{children}</div>;
+  const Tag = `${as}`;
+  const styles = Object.keys(rest).reduce((style, css) => `${style} ${classes[css]}`, `${classes.flex}`);
+
+  return <Tag className={`${styles} ${className || ''}`.trim()}>{children}</Tag>;
 };
 
 export default Flex;
