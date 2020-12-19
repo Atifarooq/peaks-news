@@ -1,0 +1,6 @@
+@import '../../styles/variables.css';
+
+.topbar {
+    background-color: var(--theme-color);
+    color: #ffffff;
+}

@@ -1,0 +1,46 @@
+@import '../../styles/variables.css';
+
+.container {
+    width: var(--container-width);
+    padding-left: var(--container-pad-x);
+    padding-right: var(--container-pad-x);
+    border: 1px solid red;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+ 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .container {
+        width: var(--container-width);
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .container {
+        width: 660px;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 960px;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .container {
+        width: 960px;
+    }
+}
