@@ -1,13 +1,15 @@
 import React from 'react';
+import Flex from '../Flex';
 import Heading from '../Typography/Heading';
+import classes from './brand.module.css';
 
 const Brand = () => {
 
     return (
-        <>
-            <Heading weight={3}>The</Heading>
-            <Heading weight={1}>Peaks</Heading>
-        </>
+        <Flex column itemsCenter className={classes.brand}>
+            <Heading weight={4} className={classes.brand__head__subhead}>The</Heading>
+            <Heading weight={1} className={classes.brand__head}>Peaks</Heading>
+        </Flex>
     );
 }
 

@@ -1,7 +1,11 @@
 :root {
     --theme-color: #08357b;
+    --theme-color-hover: #0b439c;
     --font-size: 12px;
     --body-bg: #ffffff;
     --container-width: 100%;
     --container-pad-x: 1rem;
+    --h1-size: 3.2rem;
+    --col-size: 8.3333333333%;
+    --col-gutter: 1rem;
   }

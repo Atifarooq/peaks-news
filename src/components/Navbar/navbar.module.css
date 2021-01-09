@@ -1,6 +1,6 @@
 
+
 .nav {
-    height: 50px;
     width: 100%;
     position: relative;
   }
@@ -10,10 +10,28 @@
   }
     
   .nav__items > .nav__items__link {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem 2rem;
     color: #efefef;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  }
+  
+  .nav__items > .nav__items__link:first-of-type {
+    border-bottom: 0.2rem solid green;
+  }
+  .nav__items > .nav__items__link:nth-of-type(2) {
+    border-bottom: 0.2rem solid red;
+  }
+  .nav__items > .nav__items__link:nth-of-type(3) {
+    border-bottom: 0.2rem solid orange;
+  }
+  .nav__items > .nav__items__link:last-of-type {
+    border-bottom: 0.2rem solid steelblue;
   }
   
   .nav__items > .nav__items__link:hover {
@@ -22,9 +40,13 @@
   
   .nav__check {
     display: none;
+    cursor: pointer;
   }
   
   @media (max-width:600px) {
+    .nav {
+      height: 50px;
+    }
 
     .nav__btn {
       display: inline-block;
@@ -37,7 +59,7 @@
       display: inline-block;
       width: 50px;
       height: 50px;
-      padding: 13px;
+      padding: 10.2rem;
     }
 
     .nav__btn > label:hover,.nav  .nav__check:checked ~ .nav__btn > label {
@@ -66,6 +88,7 @@
     .nav__items > .nav__items__link {
       display: block;
       width: 100%;
+      border-bottom: none !important;
     }
     
     .nav__check:not(:checked) ~ .nav__items {

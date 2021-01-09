@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./typography.module.css";
 
-const Heading = ({ weight = 6, children, ...rest }) => {
-    const Tag = `h${weight}`
+const Heading = ({ weight = 6, children, className, ...rest }) => {
+    const Tag = `h${weight}`;
     return (
-        <Tag {...rest} className={`${classes[`h${weight}`]}`}>{children}</Tag>
+        <Tag {...rest} className={`${classes[`h${weight}`]} ${className || ''}`}>{children}</Tag>
     )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, TopBar } from '../components';
 import Container from '../components/Container';
+import AppRoute from '../routes';
 
 const MainLayout = () => {
   return (
@@ -8,7 +9,7 @@ const MainLayout = () => {
       <TopBar />
       <Flex justifyAround>
         <Container>
-          <h1>Container</h1>
+          <AppRoute />
         </Container>
       </Flex>
     </>
