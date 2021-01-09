@@ -45,10 +45,10 @@ import classes from './flex.module.css';
  * @param { contentStretch }
    Responcive
  * @param { xs }
- * @param { contentEnd }
- * @param { contentCenter }
- * @param { contentAround }
- * @param { contentStretch }
+ * @param { sm }
+ * @param { md }
+ * @param { lg }
+ * @param { xl }
  */
 const Flex = ({ children, as = 'div', className, ...rest }) => {
 

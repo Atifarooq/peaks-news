@@ -1,0 +1,12 @@
+.brand {
+    width: 9rem;
+    padding: 1rem 0;
+}
+
+.brand__head__subhead {
+    margin-left: -1.25rem;
+}
+
+.brand__head {    
+    margin-top: -1.45rem;
+}
